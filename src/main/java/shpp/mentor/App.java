@@ -27,7 +27,7 @@ public class App {
         myProp.load(input);
         String filename ;
         ObjectMapper oM;
-        Account newAccount = new Account("ПРИВІТУЛІ,"+myProp.getProperty("username"));
+        Account newAccount = new Account("Привіт усі,"+myProp.getProperty("username"));
         if (Objects.equals(System.getProperty("type"), "xml")) {
            oM = new XmlMapper();
             filename = "account.xml";
